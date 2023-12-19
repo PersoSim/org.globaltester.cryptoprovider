@@ -94,3 +94,4 @@ Export-Package: org.bouncycastle,
  org.globaltester.cryptoprovider.bc.legacy_1_46
 Bundle-Vendor: secunet Security Networks AG
 Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: org.globaltester.cryptoprovider.bc.legacy.1.46

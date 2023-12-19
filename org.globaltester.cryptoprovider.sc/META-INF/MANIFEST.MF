@@ -12,3 +12,4 @@ Bundle-ClassPath: lib/core-1.58.0.0.jar,
  lib/prov-1.58.0.0.jar,
  .
 Bundle-Vendor: secunet Security Networks AG
+Automatic-Module-Name: org.globaltester.cryptoprovider.sc

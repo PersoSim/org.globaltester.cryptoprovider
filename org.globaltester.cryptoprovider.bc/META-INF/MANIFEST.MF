@@ -12,3 +12,4 @@ Bundle-ClassPath: lib/bcprov-jdk15on-150.jar,
 Export-Package: org.globaltester.cryptoprovider.bc
 Bundle-Vendor: secunet Security Networks AG
 Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: org.globaltester.cryptoprovider.bc
