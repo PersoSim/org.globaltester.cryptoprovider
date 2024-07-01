@@ -7,14 +7,16 @@ Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Activator: org.globaltester.cryptoprovider.bc.Activator
 Import-Package: org.osgi.framework
 Require-Bundle: org.globaltester.cryptoprovider
-Bundle-ClassPath: lib/bcprov-jdk18on-177.jar,
- lib/bcutil-jdk18on-177.jar,
- lib/bcmail-jdk18on-177.jar,
- lib/bcpkix-jdk18on-177.jar,
- lib/bcpg-jdk18on-177.jar,
- lib/bctls-jdk18on-177.jar,
+Bundle-ClassPath: 
+ lib/bcprov-jdk18on-1.78.1.jar,
+ lib/bcutil-jdk18on-1.78.1.jar,
+ lib/bcmail-jdk18on-1.78.1.jar,
+ lib/bcpkix-jdk18on-1.78.1.jar,
+ lib/bcpg-jdk18on-1.78.1.jar,
+ lib/bctls-jdk18on-1.78.1.jar,
  .
-Export-Package: org.bouncycastle,
+Export-Package: 
+ org.bouncycastle,
  org.bouncycastle.asn1,
  org.bouncycastle.asn1.cmp,
  org.bouncycastle.asn1.cms,

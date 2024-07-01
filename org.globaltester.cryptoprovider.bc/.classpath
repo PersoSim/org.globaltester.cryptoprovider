@@ -3,11 +3,11 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcprov-jdk18on-177.jar" sourcepath="E:/projects/globaltester/dev/env/_sources/bouncycastle/bcprov-jdk18on-177/src.zip"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcutil-jdk18on-177.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcmail-jdk18on-177.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcpkix-jdk18on-177.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bcpg-jdk18on-177.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/bctls-jdk18on-177.jar" sourcepath="E:/projects/globaltester/dev/env/_sources/bouncycastle/bctls-jdk18on-177/src"/>
+	<classpathentry exported="true" kind="lib" path="lib/bcprov-jdk18on-1.78.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bcutil-jdk18on-1.78.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bcmail-jdk18on-1.78.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bcpkix-jdk18on-1.78.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bcpg-jdk18on-1.78.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bctls-jdk18on-1.78.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
