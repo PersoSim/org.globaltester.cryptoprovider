@@ -76,6 +76,7 @@ Export-Package:
  org.bouncycastle.jcajce.provider.asymmetric.dh,
  org.bouncycastle.jcajce.provider.asymmetric.ec,
  org.bouncycastle.jcajce.provider.asymmetric.rsa,
+ org.bouncycastle.jcajce.provider.asymmetric.util,
  org.bouncycastle.jcajce.provider.asymmetric.x509,
  org.bouncycastle.jce,
  org.bouncycastle.jce.exception,
