@@ -33,6 +33,11 @@ public class CryptoProviderUtil
 		return EC5Util.convertSpec(ecSpec);
 	}
 
+	public static ECParameterSpec convertECParameterSpec(org.bouncycastle.math.ec.ECCurve curve, org.bouncycastle.jce.spec.ECParameterSpec ecSpec)
+	{
+		return EC5Util.convertSpec(EC5Util.convertCurve(curve, ecSpec.getSeed()), ecSpec);
+	}
+
 	public static byte[] ecdsaSigToASN1(byte[] sigBuff)
 	{
 		int sigHalfOfBuffLength = sigBuff.length / 2;
