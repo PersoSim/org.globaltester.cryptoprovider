@@ -8,12 +8,12 @@ Bundle-Activator: org.globaltester.cryptoprovider.bc.Activator
 Import-Package: org.osgi.framework
 Require-Bundle: org.globaltester.cryptoprovider
 Bundle-ClassPath: 
- lib/bcprov-jdk18on-1.78.1.jar,
- lib/bcutil-jdk18on-1.78.1.jar,
- lib/bcmail-jdk18on-1.78.1.jar,
- lib/bcpkix-jdk18on-1.78.1.jar,
- lib/bcpg-jdk18on-1.78.1.jar,
- lib/bctls-jdk18on-1.78.1.jar,
+ lib/bcprov-lts8on-2.73.7.jar,
+ lib/bcutil-lts8on-2.73.7.jar,
+ lib/bcmail-lts8on-2.73.7.jar,
+ lib/bcpkix-lts8on-2.73.7.jar,
+ lib/bcpg-lts8on-2.73.7.jar,
+ lib/bctls-lts8on-2.73.7.jar,
  .
 Export-Package: 
  org.bouncycastle,
@@ -62,7 +62,6 @@ Export-Package:
  org.bouncycastle.crypto.digests,
  org.bouncycastle.crypto.encodings,
  org.bouncycastle.crypto.engines,
- org.bouncycastle.crypto.examples,
  org.bouncycastle.crypto.generators,
  org.bouncycastle.crypto.io,
  org.bouncycastle.crypto.macs,
@@ -71,8 +70,6 @@ Export-Package:
  org.bouncycastle.crypto.params,
  org.bouncycastle.crypto.prng,
  org.bouncycastle.crypto.signers,
- org.bouncycastle.i18n,
- org.bouncycastle.i18n.filter,
  org.bouncycastle.jcajce.provider.asymmetric.dh,
  org.bouncycastle.jcajce.provider.asymmetric.ec,
  org.bouncycastle.jcajce.provider.asymmetric.rsa,
@@ -103,9 +100,6 @@ Export-Package:
  org.bouncycastle.util.io,
  org.bouncycastle.util.test,
  org.bouncycastle.voms,
- org.bouncycastle.x509,
- org.bouncycastle.x509.extension,
- org.bouncycastle.x509.util,
  org.globaltester.cryptoprovider.bc
 Bundle-Vendor: secunet Security Networks AG
 Bundle-ActivationPolicy: lazy
