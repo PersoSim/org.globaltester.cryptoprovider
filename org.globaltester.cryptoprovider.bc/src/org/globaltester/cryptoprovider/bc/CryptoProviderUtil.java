@@ -2,10 +2,14 @@ package org.globaltester.cryptoprovider.bc;
 
 import java.io.IOException;
 import java.math.BigInteger;
+import java.security.InvalidKeyException;
 import java.security.KeyFactory;
 import java.security.NoSuchAlgorithmException;
+import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.security.Signature;
+import java.security.SignatureException;
 import java.security.spec.ECParameterSpec;
 import java.security.spec.ECPrivateKeySpec;
 import java.security.spec.InvalidKeySpecException;
@@ -48,8 +52,7 @@ public class CryptoProviderUtil
 		vector.add(new ASN1Integer(s));
 		try {
 			return new DERSequence(vector).getEncoded();
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return null;
@@ -66,4 +69,22 @@ public class CryptoProviderUtil
 		return factory.generatePublic(spec);
 	}
 
+	public static boolean verifySignature(String sigAlg, PublicKey pubKey, byte[] hash, byte[] sigToVerify) {
+		boolean verifyResult = false;
+		try {
+			// initialize the signature object
+			Signature sig = java.security.Signature.getInstance(sigAlg, org.bouncycastle.jce.provider.BouncyCastleProvider.PROVIDER_NAME);
+			sig.initVerify(pubKey);
+
+			// add input data to signature object
+			sig.update(hash, 0, hash.length);
+
+			// verify the signature
+			verifyResult = sig.verify(sigToVerify, 0, sigToVerify.length);
+		} catch (NoSuchAlgorithmException | NoSuchProviderException | InvalidKeyException | SignatureException e) {
+			verifyResult = false;
+			e.printStackTrace();
+		}
+		return verifyResult;
+	}
 }
