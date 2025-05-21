@@ -52,6 +52,7 @@ Export-Package:
  org.bouncycastle.asn1.x9,
  org.bouncycastle.cert,
  org.bouncycastle.cert.jcajce,
+ org.bouncycastle.cert.selector,
  org.bouncycastle.cms,
  org.bouncycastle.cms.bc,
  org.bouncycastle.cms.jcajce,
