@@ -30,7 +30,7 @@ public class ProviderSc implements Cryptoprovider {
 	public Hashtable<String, String> getProperties() {
 		Hashtable<String, String> props = new Hashtable<String, String>();
 		props.put(Cryptoprovider.NAME, getCryptoProviderObject().getName());
-		props.put(Cryptoprovider.VERSION, String.valueOf(getCryptoProviderObject().getVersion()));
+		props.put(Cryptoprovider.VERSION, String.valueOf(getCryptoProviderObject().getVersionStr()));
 		props.put(Cryptoprovider.INFO, getCryptoProviderObject().getInfo());
 		return props;
 	}
