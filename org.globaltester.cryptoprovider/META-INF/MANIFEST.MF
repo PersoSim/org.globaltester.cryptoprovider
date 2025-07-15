@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Automatic-Module-Name: org.globaltester.cryptoprovider
 Bundle-Name: GT Cryptoprovider
 Bundle-SymbolicName: org.globaltester.cryptoprovider
-Bundle-Version: 4.1.0.qualifier
+Bundle-Version: 4.1.1.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Import-Package: org.osgi.framework,
  org.osgi.util.tracker
