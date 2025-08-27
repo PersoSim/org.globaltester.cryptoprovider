@@ -14,7 +14,7 @@ public class ProviderBc implements Cryptoprovider {
 
 	private ProviderBc() {
 		provider = new BouncyCastleProvider();
-		System.out.println("CryptoProvider is " + provider);
+		// System.out.println("CryptoProvider is " + provider);
 		Security.addProvider(provider);
 		Security.setProperty("org.bouncycastle.rsa.allow_unsafe_mod", "true"); // allow e.g. rsa1_5WithSHA1 signature algorithm
 	}
