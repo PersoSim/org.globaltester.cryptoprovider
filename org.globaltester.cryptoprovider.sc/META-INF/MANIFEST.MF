@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: GT Cryptoprovider SC
 Bundle-SymbolicName: org.globaltester.cryptoprovider.sc
-Bundle-Version: 4.1.2.qualifier
+Bundle-Version: 4.1.3.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Activator: org.globaltester.cryptoprovider.sc.Activator
 Import-Package: org.osgi.framework
